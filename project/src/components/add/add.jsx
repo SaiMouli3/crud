@@ -1,5 +1,7 @@
 import React from "react";
 import "./add.css";
+import axios from 'axios';
+// import { XGrid } from "@mui/x-data-grid";
 
 /**
  * @typedef {Object} Props
@@ -16,7 +18,7 @@ const Add = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Add new item
-    // axios.post(`/api/${props.slug}s`)
+    axios.post(`/api/${props.slug}s`);
   };
 
   // Change Props to props here
